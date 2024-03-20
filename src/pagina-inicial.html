@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AuMigo</title>
+    <link rel="stylesheet" href="stylesPI.css"> <!-- Este é o seu stylesPI.css -->
+    <style>
+        .pet-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .pet-card {
+            width: 200px;
+            height: 300px;
+            margin: 10px;
+            /* Ajuste a margem conforme necessário */
+            background-color: #f2f2f2;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .pet-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #ccc;
+            margin-bottom: 10px;
+        }
+
+        .nomepet {
+            color: #000000;
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="container">
+            <div class="header-left">
+                <h1>AuMigo</h1>
+                <div class="search-filters">
+                    <div class="container">
+                        <form>
+                            <input class = "pesquisar" type="text" placeholder="Pesquisar">
+                            <select name="Espécies">
+                                <option name="Espécies">Espécies</option>
+                                <option name="todos">Todas</option>
+                                <option name="gatos">Gatos</option>
+                                <option name="cachorros">Cachorros</option>
+                            </select>
+                            <select name="estado">
+                                <option value="estado">Estado</option>
+                            </select>
+                            <select name="Cidade">
+                                <option value="cidade">Cidade</option>
+                            </select>
+                            <select name="gender">
+                                <option value="Gênero">Gênero</option>
+                                <option value="macho">Macho</option>
+                                <option value="femea">Fêmea</option>
+                            </select>
+                            <select name="size">
+                                <option value="Tamanho">Tamanho</option>
+                                <option value="pequeno">Pequeno</option>
+                                <option value="médio">Médio</option>
+                                <option value="grande">Grande</option>
+                            </select>
+                            <select name="age">
+                                <option value="idade">Idade</option>
+                                <option value="filhote">Filhote</option>
+                                <option value="adulto">Adulto</option>
+                            </select>
+                            <button class="filtro" type="submit">Filtrar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Corpo da página -->
+    <div class="pet-container">
+        <div class="pet-card">
+            <div class="pet-image"></div>
+            <h4 class="nomepet">Nome do pet</h4>
+        </div>
+        <div class="pet-card">
+            <div class="pet-image"></div>
+            <h4 class="nomepet">Nome do pet</h4>
+        </div>
+        <div class="pet-card">
+            <div class="pet-image"></div>
+            <h4 class="nomepet">Nome do pet</h4>
+        </div>
+        <div class="pet-card">
+            <div class="pet-image"></div>
+            <h4 class="nomepet">Nome do pet</h4>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Tinder de Adoção de Pets. Todos os direitos reservados. Desenvolvedora Anna Laura.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
